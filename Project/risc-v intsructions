@@ -1,0 +1,266 @@
+#(a0 - a7 registers) 
+addi x10, x0,0
+addi x11, x0,1
+addi x12, x0,2
+addi x13, x0,3
+addi x14, x0,4
+addi x15, x0,5
+addi x16, x0,6
+addi x17, x0,7
+
+#(s2 - s11 registers) for storing output
+addi x18, x0,0
+addi x19, x0,25
+addi x20, x0,20
+
+# R Type Instructions
+add x18,x11,x17 # x18  8 = 1 + 7
+sub x18,x17,x11 # x18  6 = 7 - 1
+sll x18,x12,x12  # x18 = 2*4 = 8
+slt x18,x16,x12  # rs1 < rs2 (x16 < x12) 
+xor x18,x17,x16 #  6 xor 7 
+srl x18,x17,x11 # 110 -> 11
+or x18,x16,x13  #  7
+and x18,x17,x20 #  4
+
+# I Type Instructions
+addi x18,x11,28  # x15  1 + 28 = 29
+slli x18,x12,3   # x14  16 = 2*(2^3)
+slti x18,x16,33  # rs1 < rs2 (x16 < 33) 
+xori x18,x20, 17 #   5
+srli x18,x19,3   #   3
+ori x18,x16,3  #    7
+andi x18,x19,10 #  8
+
+#(a0 - a7 registers) 
+addi x10, x0,0
+addi x11, x0,1
+addi x12, x0,2
+addi x13, x0,3
+addi x14, x0,4
+addi x15, x0,5
+addi x16, x0,6
+addi x17, x0,7
+
+#(s2 - s11 registers) for storing output
+addi x18, x0,5
+addi x19, x0,25
+addi x20, x0,20
+
+
+.globl factorial
+.data
+n: .word 5
+.text
+main:
+    la t0, n
+    lw a0, 0(t0) #n
+    jal ra, factorial
+    add a1, x0, a0  # A1 contains the output 
+    addi a0, x0, 10
+    ecall # Exit
+factorial:
+    add t2,a0,x0 #n
+    addi a0,x0,1 #factorial
+    bne t2,x0,Loop
+    j exit
+Loop:
+    beq t2,x0,exit
+    mul a0,a0,t2
+    addi t2,t2,-1
+    jal x0 Loop
+exit:
+    jr ra
+
+////////////////////////// Basic Test Load And Store (word) ///////////////////
+
+addi x17, x0,0
+addi x18, x0,15
+addi x19, x0,20
+addi x20, x0,25
+addi x21, x0,30
+addi x10, x0,0
+sw x18 ,0(x10) #15 
+sw x19 ,4(x10) 
+sw x20 ,8(x10)
+sw x18 ,12(x10) #30
+lw x17 ,0(x10) #15 
+lw x17 ,4(x10) 
+lw x17 ,8(x10)
+lw x17 ,12(x10) #30
+ecall
+
+	    mem.write(addr,32'h00000893);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00f00913);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01400993);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01900a13);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01e00a93);		
+		addr++; addr++; addr++; addr++; 
+
+
+		mem.write(addr,32'h00000513);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01252023);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01352223);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01452423);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01252623);		
+		addr++; addr++; addr++; addr++; 
+
+
+		mem.write(addr,32'h00052883);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00452883);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00852883);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00c52883);		
+		addr++; addr++; addr++; addr++; 
+
+		mem.write(addr,32'h00000073);		//ecall
+		addr++; addr++; addr++; addr++; 	
+
+////////////////////////// Basic Test Load And Store (half word, Word and byte) ///////////////////
+lui x17, 0xabcde
+addi x17, x17,0x123
+
+sw x17 ,4(x10) #15 
+lw x18 ,4(x10) #30
+
+sb x17 ,8(x10) #15
+lb x18 ,8(x10) #30 
+lbu x18 ,8(x10) #30
+
+sh x17 ,12(x10) #15 
+lh x19 ,12(x10) #30
+lhu x19 ,12(x10) #30
+addi x19, x0,0x0
+ecall
+
+mem.write(addr,32'habcde8b7);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h12388893);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01152223);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00452903);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01150423);		
+		addr++; addr++; addr++; addr++; 
+
+
+		mem.write(addr,32'h00850903);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00854903);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01151623);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00c51983);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00c55983);		
+		addr++; addr++; addr++; addr++; 
+
+
+		mem.write(addr,32'h00000993);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00000073);		//ecall
+		addr++; addr++; addr++; addr++; 	
+
+
+///////////////////////////////////////// Factorial Code test
+
+    0:		00000513		addi x10 x0 0
+	4:		00100593		addi x11 x0 1
+	8:		00200613		addi x12 x0 2
+	c:		00300693		addi x13 x0 3
+	10:		00400713		addi x14 x0 4
+	14:		00500793		addi x15 x0 5
+	18:		00600813		addi x16 x0 6
+	1c:		00700893		addi x17 x0 7
+	20:		00500913		addi x18 x0 5
+	24:		01900993		addi x19 x0 25
+	28:		01400a13		addi x20 x0 20
+
+0000002c <main>:
+	2c:		10000297		auipc x5 0x10000
+	30:		fd428293		addi x5 x5 -44
+	34:		0002a503		lw x10 0 x5
+	38:		010000ef		jal x1 16 <factorial>
+	3c:		00a005b3		add x11 x0 x10
+	40:		00a00513		addi x10 x0 10
+	44:		00000073		ecall
+
+00000048 <factorial>:
+	48:		000503b3		add x7 x10 x0
+	4c:		00100513		addi x10 x0 1
+	50:		00039463		bne x7 x0 8 <Loop>
+	54:		0140006f		jal x0 20 <exit>
+
+00000058 <Loop>:
+	58:		00038863		beq x7 x0 16 <exit>
+	5c:		02750533		mul x10 x10 x7
+	60:		fff38393		addi x7 x7 -1
+	64:		ff5ff06f		jal x0 -12 <Loop>
+
+00000068 <exit>:
+	68:		00008067		jalr x0 x1 0
+
+    ////////////////////////////////////////////
+
+    	mem.write(addr,32'h00500513);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00100593);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00200613);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00300693);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00400713);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00500793);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00600813);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00700893);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h00500913);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01900993);		
+		addr++; addr++; addr++; addr++; 
+		mem.write(addr,32'h01400a13);		
+		addr++; addr++; addr++; addr++; 
+	
+			mem.write(addr,32'h00500513);		//ecall
+		addr++; addr++; addr++; addr++; 		
+			mem.write(addr,32'h010000ef);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00a005b3);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00a00513);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00000073);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h000503b3);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00100513);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00039463);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h0140006f);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00038863);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h02750533);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'hfff38393);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'hff5ff06f);		//ecall
+		addr++; addr++; addr++; addr++; 	
+			mem.write(addr,32'h00008067);		//ecall
+		addr++; addr++; addr++; addr++; 	
