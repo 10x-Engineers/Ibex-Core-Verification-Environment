@@ -5,8 +5,11 @@
 Ibex is an Open Source 32-bit RISC-V CPU Core which is heavily parameterized and well suited for embedded control applications. The Ibex Core also supports IEMCB extensions which are Integer (I), Embedded (E), Integer Multiplication and Division (M), Compressed (C), and Bit Manipulation (B) extensions.
 Ibex offers several configuration parameters to meet the needs of various application scenarios. The options include different choices for the architecture of the multiplier unit, as well as a range of performance and security features. 
 Ibex is designed to be 2 Stage pipelined.
-First stage is the Instruction fetch stage which fetches instructions via prefetch buffer, capable of fetching 1 instruction per cycle from the external memory.
-Second is the Decode and Execution stage. 
+
+1)	First stage is the Instruction fetch stage which fetches instructions via prefetch buffer, capable of fetching 1 instruction per cycle from the external memory.
+
+2)	Second is the Decode and Execution stage. 
+
 So, All instructions require two minimum cycles to complete. For any instruction that takes more than one cycle to complete, the core will stall until the instruction is complete. Following picture is the Ibex core detailed view.
 
 Reference: LowRISC (Github)
@@ -97,9 +100,10 @@ Interfaces provide a way of communication between the UVC and DUT for any design
 
 **How To Run**
 
-There is make file which contains the following commands. Simply type "make (anyone of the commands below)"
+There is make file in the project directory which contains the following commands. Simply type "make (anyone of the commands below)"
   
-The required software to run these commands is VCS Synopsys Tool 2016 verison or above.
+The required software to run these commands is **VCS Synopsys Tool** 2016 verison or above. 
+You have to **run** (compile) the files first then **sim** start the simulation.
 
 
         run:
