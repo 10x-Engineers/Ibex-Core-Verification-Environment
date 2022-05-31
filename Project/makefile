@@ -1,5 +1,5 @@
 run:
-	vcs -ntb_opts uvm-1.2 -sverilog -f flist -LDFLAGS -full64 -debug_all +lint=TFIPC-L
+	vcs -ntb_opts uvm-1.2 -sverilog -f Flist -LDFLAGS -full64 -debug_all +lint=TFIPC-L
 sim:
 	./simv +UVM_TESTNAME=ibex_test_base_test +UVM_VERBOSITY=UVM_DEBUG -timescale 1ns/1ns
 clean:

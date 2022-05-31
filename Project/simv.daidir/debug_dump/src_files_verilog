@@ -1,60 +1,56 @@
-/root/Downloads/Ibex Core Verification Environment/dv_fcov_macros.svh
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_agent.sv
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_driver.sv
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_monitor.sv
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_seq_item.sv
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_sequence.sv
-/root/Downloads/Ibex Core Verification Environment/fetch_agent/ibex_test_fetch_sequencer.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_alu.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_compressed_decoder.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_controller.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_core.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_counter.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_cs_registers.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_csr.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_decoder.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_ex_block.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_fetch_fifo.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_id_stage.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_if_stage.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_load_store_unit.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_multdiv_fast.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_multdiv_slow.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_prefetch_buffer.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_register_file_ff.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_data_mem_intf.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_environment.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_instr_mem_intf.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_intf_agents_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_probe_if.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_test_lib.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_test_testbench.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_top.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_tracer.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_tracer_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/ibex_wb_stage.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_agent.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_driver.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_monitor.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_seq_item.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_sequence.sv
-/root/Downloads/Ibex Core Verification Environment/lsu_agent/ibex_test_lsu_sequencer.sv
-/root/Downloads/Ibex Core Verification Environment/prim_assert.sv
-/root/Downloads/Ibex Core Verification Environment/prim_assert_standard_macros.svh
-/root/Downloads/Ibex Core Verification Environment/prim_clock_gating.sv
-/root/Downloads/Ibex Core Verification Environment/prim_generic_clock_gating.sv
-/root/Downloads/Ibex Core Verification Environment/prim_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/prim_ram_1p_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/rtl/ibex_top_tracing.sv
-/root/Downloads/Ibex Core Verification Environment/verif/bus_params_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/verif/clk_if.sv
-/root/Downloads/Ibex Core Verification Environment/verif/clk_rst_if.sv
-/root/Downloads/Ibex Core Verification Environment/verif/clock.sv
-/root/Downloads/Ibex Core Verification Environment/verif/dv_macros.svh
-/root/Downloads/Ibex Core Verification Environment/verif/mem_model.sv
-/root/Downloads/Ibex Core Verification Environment/verif/mem_model_pkg.sv
-/root/Downloads/Ibex Core Verification Environment/verif/riscv_signature_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_agent.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_driver.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_monitor.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_seq_item.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_sequence.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/fetch_agent/ibex_test_fetch_sequencer.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_data_mem_intf.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_environment.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_instr_mem_intf.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_intf_agents_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_probe_if.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_test_lib.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/ibex_test_testbench.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_agent.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_driver.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_monitor.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_seq_item.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_sequence.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/lsu_agent/ibex_test_lsu_sequencer.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_assert.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_assert_standard_macros.svh
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_clock_gating.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_generic_clock_gating.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim/prim_ram_1p_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/dv_fcov_macros.svh
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_alu.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_compressed_decoder.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_controller.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_core.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_counter.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_cs_registers.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_csr.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_decoder.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_ex_block.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_fetch_fifo.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_id_stage.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_if_stage.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_load_store_unit.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_multdiv_fast.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_multdiv_slow.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_prefetch_buffer.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_register_file_ff.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_top.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_top_tracing.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_tracer.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_tracer_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl/ibex_wb_stage.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/verif/bus_params_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/verif/mem_model.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/verif/mem_model_pkg.sv
+/root/Downloads/Ibex-Core-Verification-Environment/Project/verif/riscv_signature_pkg.sv
 /usr/synopsys/vcs-L-2016.06/etc/uvm-1.2/base/uvm_barrier.svh
 /usr/synopsys/vcs-L-2016.06/etc/uvm-1.2/base/uvm_base.svh
 /usr/synopsys/vcs-L-2016.06/etc/uvm-1.2/base/uvm_bottomup_phase.svh

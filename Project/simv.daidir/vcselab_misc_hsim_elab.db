@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/root/Downloads/Ibex Core Verification Environment/simv.daidir
+pDaiDir                            	/root/Downloads/Ibex-Core-Verification-Environment/Project/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 hsMainFileCount                    	0

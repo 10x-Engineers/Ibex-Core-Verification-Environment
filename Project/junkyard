@@ -1,8 +1,0 @@
-prim/prim_assert.sv
-prim/prim_clock_gating.sv
-prim/prim_pkg.sv
-prim/prim_assert_standard_macros.svh
-prim/prim_generic_clock_gating.sv
-prim/prim_ram_1p_pkg.sv
-
-
