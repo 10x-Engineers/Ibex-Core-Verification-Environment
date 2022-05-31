@@ -97,7 +97,7 @@ Interfaces provide a way of communication between the UVC and DUT for any design
 
 **How To Run**
 
-There is make file which contains the following commands. Simply type "make <anyone of the commands below>"
+There is make file which contains the following commands. Simply type "make (anyone of the commands below)"
   
 The required software to run these commands is VCS Synopsys Tool 2016 verison or above.
 
