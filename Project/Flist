@@ -1,0 +1,12 @@
++incdir+/root/Downloads/Ibex-Core-Verification-Environment/Project/verif
+verif/bus_params_pkg.sv
+verif/mem_model_pkg.sv
+verif/riscv_signature_pkg.sv
+ibex_test_instr_mem_intf.sv
+ibex_test_data_mem_intf.sv
+ibex_test_intf_agents_pkg.sv
+ibex_test_probe_if.sv
++incdir+/root/Downloads/Ibex-Core-Verification-Environment/Project/rtl
++incdir+/root/Downloads/Ibex-Core-Verification-Environment/Project/prim
+rtl/ibex_top_tracing.sv
+ibex_test_testbench.sv

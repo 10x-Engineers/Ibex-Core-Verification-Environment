@@ -1,0 +1,720 @@
+  CREATE_STREAM @5 {NAME:fetch_seq T:Transactions SCOPE:uvm_test_top.environment.fetch_agent.sequencer STREAM:1291}
+  CREATE_STREAM @5 {NAME:fetch_seq T: SCOPE:uvm_test_top.environment.fetch_agent.sequencer STREAM:1293}
+    OPEN_RECORDER @5 {TXH:1295 STREAM:1293 NAME:fetch_seq TIME:5 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequence @1 (@381)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+Phase: N/A
+"}
+  CREATE_STREAM @5 {NAME:lsu_seq T:Transactions SCOPE:uvm_test_top.environment.lsu_agent.sequencer STREAM:1298}
+  CREATE_STREAM @5 {NAME:lsu_seq T: SCOPE:uvm_test_top.environment.lsu_agent.sequencer STREAM:1300}
+    OPEN_RECORDER @5 {TXH:1302 STREAM:1300 NAME:lsu_seq TIME:5 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_lsu_sequence @1 (@392)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_lsu_sequencer @1 (@851)
+Phase: N/A
+"}
+    OPEN_RECORDER @45 {TXH:1369 STREAM:1293 NAME:req TIME:45 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @9 (@1365)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @45 {TXH1:1295 TXH2:1369 RELATION=child}
+      SET_ATTR @45 {TXH:1369 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @45 {TXH:1369 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @45 {TXH:1369 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @45 {TXH:1369 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @45 {TXH:1369 NAME:instr_rdata_i VALUE:500513   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @45 {TXH:1369 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @45 {TXH:1369 TIME=45}
+    FREE_RECORDER @45 {TXH:1369}
+    OPEN_RECORDER @55 {TXH:1398 STREAM:1293 NAME:req TIME:55 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @12 (@1394)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @55 {TXH1:1295 TXH2:1398 RELATION=child}
+      SET_ATTR @55 {TXH:1398 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @55 {TXH:1398 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @55 {TXH:1398 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @55 {TXH:1398 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @55 {TXH:1398 NAME:instr_rdata_i VALUE:100593   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @55 {TXH:1398 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @55 {TXH:1398 TIME=55}
+    FREE_RECORDER @55 {TXH:1398}
+    OPEN_RECORDER @65 {TXH:1426 STREAM:1293 NAME:req TIME:65 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @15 (@1422)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @65 {TXH1:1295 TXH2:1426 RELATION=child}
+      SET_ATTR @65 {TXH:1426 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @65 {TXH:1426 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @65 {TXH:1426 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @65 {TXH:1426 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @65 {TXH:1426 NAME:instr_rdata_i VALUE:200613   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @65 {TXH:1426 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @65 {TXH:1426 TIME=65}
+    FREE_RECORDER @65 {TXH:1426}
+    OPEN_RECORDER @75 {TXH:1454 STREAM:1293 NAME:req TIME:75 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @18 (@1450)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @75 {TXH1:1295 TXH2:1454 RELATION=child}
+      SET_ATTR @75 {TXH:1454 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @75 {TXH:1454 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @75 {TXH:1454 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @75 {TXH:1454 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @75 {TXH:1454 NAME:instr_rdata_i VALUE:300693   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @75 {TXH:1454 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @75 {TXH:1454 TIME=75}
+    FREE_RECORDER @75 {TXH:1454}
+    OPEN_RECORDER @85 {TXH:1482 STREAM:1293 NAME:req TIME:85 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @21 (@1478)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @85 {TXH1:1295 TXH2:1482 RELATION=child}
+      SET_ATTR @85 {TXH:1482 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @85 {TXH:1482 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @85 {TXH:1482 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @85 {TXH:1482 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @85 {TXH:1482 NAME:instr_rdata_i VALUE:400713   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @85 {TXH:1482 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @85 {TXH:1482 TIME=85}
+    FREE_RECORDER @85 {TXH:1482}
+    OPEN_RECORDER @95 {TXH:1510 STREAM:1293 NAME:req TIME:95 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @24 (@1506)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @95 {TXH1:1295 TXH2:1510 RELATION=child}
+      SET_ATTR @95 {TXH:1510 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @95 {TXH:1510 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @95 {TXH:1510 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @95 {TXH:1510 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @95 {TXH:1510 NAME:instr_rdata_i VALUE:500793   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @95 {TXH:1510 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @95 {TXH:1510 TIME=95}
+    FREE_RECORDER @95 {TXH:1510}
+    OPEN_RECORDER @105 {TXH:1538 STREAM:1293 NAME:req TIME:105 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @27 (@1534)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @105 {TXH1:1295 TXH2:1538 RELATION=child}
+      SET_ATTR @105 {TXH:1538 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @105 {TXH:1538 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @105 {TXH:1538 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @105 {TXH:1538 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @105 {TXH:1538 NAME:instr_rdata_i VALUE:600813   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @105 {TXH:1538 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @105 {TXH:1538 TIME=105}
+    FREE_RECORDER @105 {TXH:1538}
+    OPEN_RECORDER @115 {TXH:1566 STREAM:1293 NAME:req TIME:115 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @30 (@1562)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @115 {TXH1:1295 TXH2:1566 RELATION=child}
+      SET_ATTR @115 {TXH:1566 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @115 {TXH:1566 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @115 {TXH:1566 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @115 {TXH:1566 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @115 {TXH:1566 NAME:instr_rdata_i VALUE:700893   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @115 {TXH:1566 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @115 {TXH:1566 TIME=115}
+    FREE_RECORDER @115 {TXH:1566}
+    OPEN_RECORDER @125 {TXH:1594 STREAM:1293 NAME:req TIME:125 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @33 (@1590)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @125 {TXH1:1295 TXH2:1594 RELATION=child}
+      SET_ATTR @125 {TXH:1594 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @125 {TXH:1594 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @125 {TXH:1594 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @125 {TXH:1594 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @125 {TXH:1594 NAME:instr_rdata_i VALUE:500913   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @125 {TXH:1594 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @125 {TXH:1594 TIME=125}
+    FREE_RECORDER @125 {TXH:1594}
+    OPEN_RECORDER @135 {TXH:1622 STREAM:1293 NAME:req TIME:135 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @36 (@1618)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @135 {TXH1:1295 TXH2:1622 RELATION=child}
+      SET_ATTR @135 {TXH:1622 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @135 {TXH:1622 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @135 {TXH:1622 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @135 {TXH:1622 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @135 {TXH:1622 NAME:instr_rdata_i VALUE:1900993   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @135 {TXH:1622 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @135 {TXH:1622 TIME=135}
+    FREE_RECORDER @135 {TXH:1622}
+    OPEN_RECORDER @145 {TXH:1650 STREAM:1293 NAME:req TIME:145 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @39 (@1646)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @145 {TXH1:1295 TXH2:1650 RELATION=child}
+      SET_ATTR @145 {TXH:1650 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @145 {TXH:1650 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @145 {TXH:1650 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @145 {TXH:1650 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @145 {TXH:1650 NAME:instr_rdata_i VALUE:1400a13   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @145 {TXH:1650 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @145 {TXH:1650 TIME=145}
+    FREE_RECORDER @145 {TXH:1650}
+    OPEN_RECORDER @155 {TXH:1678 STREAM:1293 NAME:req TIME:155 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @42 (@1674)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @155 {TXH1:1295 TXH2:1678 RELATION=child}
+      SET_ATTR @155 {TXH:1678 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @155 {TXH:1678 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @155 {TXH:1678 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @155 {TXH:1678 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @155 {TXH:1678 NAME:instr_rdata_i VALUE:500513   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @155 {TXH:1678 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @155 {TXH:1678 TIME=155}
+    FREE_RECORDER @155 {TXH:1678}
+    OPEN_RECORDER @165 {TXH:1706 STREAM:1293 NAME:req TIME:165 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @45 (@1702)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @165 {TXH1:1295 TXH2:1706 RELATION=child}
+      SET_ATTR @165 {TXH:1706 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @165 {TXH:1706 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @165 {TXH:1706 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @165 {TXH:1706 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @165 {TXH:1706 NAME:instr_rdata_i VALUE:10000ef   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @165 {TXH:1706 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @165 {TXH:1706 TIME=165}
+    FREE_RECORDER @165 {TXH:1706}
+    OPEN_RECORDER @175 {TXH:1734 STREAM:1293 NAME:req TIME:175 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @48 (@1730)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @175 {TXH1:1295 TXH2:1734 RELATION=child}
+      SET_ATTR @175 {TXH:1734 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @175 {TXH:1734 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @175 {TXH:1734 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @175 {TXH:1734 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @175 {TXH:1734 NAME:instr_rdata_i VALUE:a005b3   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @175 {TXH:1734 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @175 {TXH:1734 TIME=175}
+    FREE_RECORDER @175 {TXH:1734}
+    OPEN_RECORDER @185 {TXH:1762 STREAM:1293 NAME:req TIME:185 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @51 (@1758)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @185 {TXH1:1295 TXH2:1762 RELATION=child}
+      SET_ATTR @185 {TXH:1762 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @185 {TXH:1762 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @185 {TXH:1762 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @185 {TXH:1762 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @185 {TXH:1762 NAME:instr_rdata_i VALUE:503b3   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @185 {TXH:1762 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @185 {TXH:1762 TIME=185}
+    FREE_RECORDER @185 {TXH:1762}
+    OPEN_RECORDER @195 {TXH:1790 STREAM:1293 NAME:req TIME:195 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @54 (@1786)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @195 {TXH1:1295 TXH2:1790 RELATION=child}
+      SET_ATTR @195 {TXH:1790 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @195 {TXH:1790 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @195 {TXH:1790 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @195 {TXH:1790 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @195 {TXH:1790 NAME:instr_rdata_i VALUE:100513   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @195 {TXH:1790 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @195 {TXH:1790 TIME=195}
+    FREE_RECORDER @195 {TXH:1790}
+    OPEN_RECORDER @205 {TXH:1818 STREAM:1293 NAME:req TIME:205 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @57 (@1814)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @205 {TXH1:1295 TXH2:1818 RELATION=child}
+      SET_ATTR @205 {TXH:1818 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @205 {TXH:1818 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @205 {TXH:1818 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @205 {TXH:1818 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @205 {TXH:1818 NAME:instr_rdata_i VALUE:39463   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @205 {TXH:1818 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @205 {TXH:1818 TIME=205}
+    FREE_RECORDER @205 {TXH:1818}
+    OPEN_RECORDER @215 {TXH:1846 STREAM:1293 NAME:req TIME:215 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @60 (@1842)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @215 {TXH1:1295 TXH2:1846 RELATION=child}
+      SET_ATTR @215 {TXH:1846 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @215 {TXH:1846 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @215 {TXH:1846 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @215 {TXH:1846 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @215 {TXH:1846 NAME:instr_rdata_i VALUE:140006f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @215 {TXH:1846 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @215 {TXH:1846 TIME=215}
+    FREE_RECORDER @215 {TXH:1846}
+    OPEN_RECORDER @225 {TXH:1874 STREAM:1293 NAME:req TIME:225 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @63 (@1870)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @225 {TXH1:1295 TXH2:1874 RELATION=child}
+      SET_ATTR @225 {TXH:1874 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @225 {TXH:1874 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @225 {TXH:1874 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @225 {TXH:1874 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @225 {TXH:1874 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @225 {TXH:1874 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @225 {TXH:1874 TIME=225}
+    FREE_RECORDER @225 {TXH:1874}
+    OPEN_RECORDER @235 {TXH:1902 STREAM:1293 NAME:req TIME:235 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @66 (@1898)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @235 {TXH1:1295 TXH2:1902 RELATION=child}
+      SET_ATTR @235 {TXH:1902 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @235 {TXH:1902 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @235 {TXH:1902 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @235 {TXH:1902 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @235 {TXH:1902 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @235 {TXH:1902 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @235 {TXH:1902 TIME=235}
+    FREE_RECORDER @235 {TXH:1902}
+    OPEN_RECORDER @245 {TXH:1930 STREAM:1293 NAME:req TIME:245 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @69 (@1926)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @245 {TXH1:1295 TXH2:1930 RELATION=child}
+      SET_ATTR @245 {TXH:1930 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @245 {TXH:1930 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @245 {TXH:1930 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @245 {TXH:1930 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @245 {TXH:1930 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @245 {TXH:1930 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @245 {TXH:1930 TIME=245}
+    FREE_RECORDER @245 {TXH:1930}
+    OPEN_RECORDER @255 {TXH:1958 STREAM:1293 NAME:req TIME:255 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @72 (@1954)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @255 {TXH1:1295 TXH2:1958 RELATION=child}
+      SET_ATTR @255 {TXH:1958 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @255 {TXH:1958 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @255 {TXH:1958 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @255 {TXH:1958 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @255 {TXH:1958 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @255 {TXH:1958 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @255 {TXH:1958 TIME=255}
+    FREE_RECORDER @255 {TXH:1958}
+    OPEN_RECORDER @265 {TXH:1986 STREAM:1293 NAME:req TIME:265 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @75 (@1982)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @265 {TXH1:1295 TXH2:1986 RELATION=child}
+      SET_ATTR @265 {TXH:1986 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @265 {TXH:1986 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @265 {TXH:1986 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @265 {TXH:1986 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @265 {TXH:1986 NAME:instr_rdata_i VALUE:ff5ff06f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @265 {TXH:1986 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @265 {TXH:1986 TIME=265}
+    FREE_RECORDER @265 {TXH:1986}
+    OPEN_RECORDER @275 {TXH:2016 STREAM:1293 NAME:req TIME:275 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @78 (@2012)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @275 {TXH1:1295 TXH2:2016 RELATION=child}
+      SET_ATTR @275 {TXH:2016 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @275 {TXH:2016 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @275 {TXH:2016 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @275 {TXH:2016 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @275 {TXH:2016 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @275 {TXH:2016 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @275 {TXH:2016 TIME=275}
+    FREE_RECORDER @275 {TXH:2016}
+    OPEN_RECORDER @295 {TXH:2052 STREAM:1293 NAME:req TIME:295 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @82 (@2048)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @295 {TXH1:1295 TXH2:2052 RELATION=child}
+      SET_ATTR @295 {TXH:2052 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @295 {TXH:2052 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @295 {TXH:2052 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @295 {TXH:2052 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @295 {TXH:2052 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @295 {TXH:2052 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @295 {TXH:2052 TIME=295}
+    FREE_RECORDER @295 {TXH:2052}
+    OPEN_RECORDER @305 {TXH:2088 STREAM:1293 NAME:req TIME:305 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @85 (@2084)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @305 {TXH1:1295 TXH2:2088 RELATION=child}
+      SET_ATTR @305 {TXH:2088 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @305 {TXH:2088 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @305 {TXH:2088 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @305 {TXH:2088 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @305 {TXH:2088 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @305 {TXH:2088 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @305 {TXH:2088 TIME=305}
+    FREE_RECORDER @305 {TXH:2088}
+    OPEN_RECORDER @315 {TXH:2116 STREAM:1293 NAME:req TIME:315 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @88 (@2112)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @315 {TXH1:1295 TXH2:2116 RELATION=child}
+      SET_ATTR @315 {TXH:2116 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @315 {TXH:2116 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @315 {TXH:2116 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @315 {TXH:2116 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @315 {TXH:2116 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @315 {TXH:2116 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @315 {TXH:2116 TIME=315}
+    FREE_RECORDER @315 {TXH:2116}
+    OPEN_RECORDER @325 {TXH:2144 STREAM:1293 NAME:req TIME:325 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @91 (@2140)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @325 {TXH1:1295 TXH2:2144 RELATION=child}
+      SET_ATTR @325 {TXH:2144 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @325 {TXH:2144 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @325 {TXH:2144 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @325 {TXH:2144 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @325 {TXH:2144 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @325 {TXH:2144 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @325 {TXH:2144 TIME=325}
+    FREE_RECORDER @325 {TXH:2144}
+    OPEN_RECORDER @335 {TXH:2172 STREAM:1293 NAME:req TIME:335 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @94 (@2168)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @335 {TXH1:1295 TXH2:2172 RELATION=child}
+      SET_ATTR @335 {TXH:2172 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @335 {TXH:2172 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @335 {TXH:2172 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @335 {TXH:2172 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @335 {TXH:2172 NAME:instr_rdata_i VALUE:ff5ff06f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @335 {TXH:2172 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @335 {TXH:2172 TIME=335}
+    FREE_RECORDER @335 {TXH:2172}
+    OPEN_RECORDER @345 {TXH:2202 STREAM:1293 NAME:req TIME:345 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @97 (@2198)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @345 {TXH1:1295 TXH2:2202 RELATION=child}
+      SET_ATTR @345 {TXH:2202 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @345 {TXH:2202 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @345 {TXH:2202 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @345 {TXH:2202 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @345 {TXH:2202 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @345 {TXH:2202 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @345 {TXH:2202 TIME=345}
+    FREE_RECORDER @345 {TXH:2202}
+    OPEN_RECORDER @365 {TXH:2238 STREAM:1293 NAME:req TIME:365 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @101 (@2234)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @365 {TXH1:1295 TXH2:2238 RELATION=child}
+      SET_ATTR @365 {TXH:2238 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @365 {TXH:2238 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @365 {TXH:2238 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @365 {TXH:2238 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @365 {TXH:2238 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @365 {TXH:2238 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @365 {TXH:2238 TIME=365}
+    FREE_RECORDER @365 {TXH:2238}
+    OPEN_RECORDER @375 {TXH:2274 STREAM:1293 NAME:req TIME:375 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @104 (@2270)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @375 {TXH1:1295 TXH2:2274 RELATION=child}
+      SET_ATTR @375 {TXH:2274 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @375 {TXH:2274 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @375 {TXH:2274 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @375 {TXH:2274 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @375 {TXH:2274 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @375 {TXH:2274 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @375 {TXH:2274 TIME=375}
+    FREE_RECORDER @375 {TXH:2274}
+    OPEN_RECORDER @385 {TXH:2302 STREAM:1293 NAME:req TIME:385 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @107 (@2298)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @385 {TXH1:1295 TXH2:2302 RELATION=child}
+      SET_ATTR @385 {TXH:2302 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @385 {TXH:2302 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @385 {TXH:2302 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @385 {TXH:2302 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @385 {TXH:2302 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @385 {TXH:2302 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @385 {TXH:2302 TIME=385}
+    FREE_RECORDER @385 {TXH:2302}
+    OPEN_RECORDER @395 {TXH:2330 STREAM:1293 NAME:req TIME:395 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @110 (@2326)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @395 {TXH1:1295 TXH2:2330 RELATION=child}
+      SET_ATTR @395 {TXH:2330 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @395 {TXH:2330 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @395 {TXH:2330 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @395 {TXH:2330 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @395 {TXH:2330 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @395 {TXH:2330 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @395 {TXH:2330 TIME=395}
+    FREE_RECORDER @395 {TXH:2330}
+    OPEN_RECORDER @405 {TXH:2358 STREAM:1293 NAME:req TIME:405 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @113 (@2354)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @405 {TXH1:1295 TXH2:2358 RELATION=child}
+      SET_ATTR @405 {TXH:2358 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @405 {TXH:2358 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @405 {TXH:2358 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @405 {TXH:2358 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @405 {TXH:2358 NAME:instr_rdata_i VALUE:ff5ff06f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @405 {TXH:2358 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @405 {TXH:2358 TIME=405}
+    FREE_RECORDER @405 {TXH:2358}
+    OPEN_RECORDER @415 {TXH:2388 STREAM:1293 NAME:req TIME:415 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @116 (@2384)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @415 {TXH1:1295 TXH2:2388 RELATION=child}
+      SET_ATTR @415 {TXH:2388 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @415 {TXH:2388 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @415 {TXH:2388 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @415 {TXH:2388 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @415 {TXH:2388 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @415 {TXH:2388 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @415 {TXH:2388 TIME=415}
+    FREE_RECORDER @415 {TXH:2388}
+    OPEN_RECORDER @435 {TXH:2424 STREAM:1293 NAME:req TIME:435 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @120 (@2420)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @435 {TXH1:1295 TXH2:2424 RELATION=child}
+      SET_ATTR @435 {TXH:2424 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @435 {TXH:2424 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @435 {TXH:2424 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @435 {TXH:2424 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @435 {TXH:2424 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @435 {TXH:2424 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @435 {TXH:2424 TIME=435}
+    FREE_RECORDER @435 {TXH:2424}
+    OPEN_RECORDER @445 {TXH:2460 STREAM:1293 NAME:req TIME:445 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @123 (@2456)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @445 {TXH1:1295 TXH2:2460 RELATION=child}
+      SET_ATTR @445 {TXH:2460 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @445 {TXH:2460 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @445 {TXH:2460 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @445 {TXH:2460 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @445 {TXH:2460 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @445 {TXH:2460 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @445 {TXH:2460 TIME=445}
+    FREE_RECORDER @445 {TXH:2460}
+    OPEN_RECORDER @455 {TXH:2488 STREAM:1293 NAME:req TIME:455 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @126 (@2484)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @455 {TXH1:1295 TXH2:2488 RELATION=child}
+      SET_ATTR @455 {TXH:2488 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @455 {TXH:2488 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @455 {TXH:2488 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @455 {TXH:2488 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @455 {TXH:2488 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @455 {TXH:2488 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @455 {TXH:2488 TIME=455}
+    FREE_RECORDER @455 {TXH:2488}
+    OPEN_RECORDER @465 {TXH:2516 STREAM:1293 NAME:req TIME:465 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @129 (@2512)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @465 {TXH1:1295 TXH2:2516 RELATION=child}
+      SET_ATTR @465 {TXH:2516 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @465 {TXH:2516 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @465 {TXH:2516 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @465 {TXH:2516 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @465 {TXH:2516 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @465 {TXH:2516 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @465 {TXH:2516 TIME=465}
+    FREE_RECORDER @465 {TXH:2516}
+    OPEN_RECORDER @475 {TXH:2544 STREAM:1293 NAME:req TIME:475 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @132 (@2540)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @475 {TXH1:1295 TXH2:2544 RELATION=child}
+      SET_ATTR @475 {TXH:2544 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @475 {TXH:2544 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @475 {TXH:2544 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @475 {TXH:2544 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @475 {TXH:2544 NAME:instr_rdata_i VALUE:ff5ff06f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @475 {TXH:2544 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @475 {TXH:2544 TIME=475}
+    FREE_RECORDER @475 {TXH:2544}
+    OPEN_RECORDER @485 {TXH:2574 STREAM:1293 NAME:req TIME:485 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @135 (@2570)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @485 {TXH1:1295 TXH2:2574 RELATION=child}
+      SET_ATTR @485 {TXH:2574 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @485 {TXH:2574 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @485 {TXH:2574 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @485 {TXH:2574 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @485 {TXH:2574 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @485 {TXH:2574 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @485 {TXH:2574 TIME=485}
+    FREE_RECORDER @485 {TXH:2574}
+    OPEN_RECORDER @505 {TXH:2610 STREAM:1293 NAME:req TIME:505 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @139 (@2606)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @505 {TXH1:1295 TXH2:2610 RELATION=child}
+      SET_ATTR @505 {TXH:2610 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @505 {TXH:2610 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @505 {TXH:2610 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @505 {TXH:2610 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @505 {TXH:2610 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @505 {TXH:2610 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @505 {TXH:2610 TIME=505}
+    FREE_RECORDER @505 {TXH:2610}
+    OPEN_RECORDER @515 {TXH:2646 STREAM:1293 NAME:req TIME:515 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @142 (@2642)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @515 {TXH1:1295 TXH2:2646 RELATION=child}
+      SET_ATTR @515 {TXH:2646 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @515 {TXH:2646 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @515 {TXH:2646 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @515 {TXH:2646 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @515 {TXH:2646 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @515 {TXH:2646 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @515 {TXH:2646 TIME=515}
+    FREE_RECORDER @515 {TXH:2646}
+    OPEN_RECORDER @525 {TXH:2674 STREAM:1293 NAME:req TIME:525 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @145 (@2670)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @525 {TXH1:1295 TXH2:2674 RELATION=child}
+      SET_ATTR @525 {TXH:2674 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @525 {TXH:2674 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @525 {TXH:2674 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @525 {TXH:2674 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @525 {TXH:2674 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @525 {TXH:2674 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @525 {TXH:2674 TIME=525}
+    FREE_RECORDER @525 {TXH:2674}
+    OPEN_RECORDER @535 {TXH:2702 STREAM:1293 NAME:req TIME:535 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @148 (@2698)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @535 {TXH1:1295 TXH2:2702 RELATION=child}
+      SET_ATTR @535 {TXH:2702 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @535 {TXH:2702 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @535 {TXH:2702 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @535 {TXH:2702 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @535 {TXH:2702 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @535 {TXH:2702 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @535 {TXH:2702 TIME=535}
+    FREE_RECORDER @535 {TXH:2702}
+    OPEN_RECORDER @545 {TXH:2730 STREAM:1293 NAME:req TIME:545 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @151 (@2726)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @545 {TXH1:1295 TXH2:2730 RELATION=child}
+      SET_ATTR @545 {TXH:2730 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @545 {TXH:2730 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @545 {TXH:2730 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @545 {TXH:2730 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @545 {TXH:2730 NAME:instr_rdata_i VALUE:ff5ff06f   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @545 {TXH:2730 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @545 {TXH:2730 TIME=545}
+    FREE_RECORDER @545 {TXH:2730}
+    OPEN_RECORDER @555 {TXH:2760 STREAM:1293 NAME:req TIME:555 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @154 (@2756)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @555 {TXH1:1295 TXH2:2760 RELATION=child}
+      SET_ATTR @555 {TXH:2760 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @555 {TXH:2760 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @555 {TXH:2760 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @555 {TXH:2760 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @555 {TXH:2760 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @555 {TXH:2760 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @555 {TXH:2760 TIME=555}
+    FREE_RECORDER @555 {TXH:2760}
+    OPEN_RECORDER @575 {TXH:2796 STREAM:1293 NAME:req TIME:575 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @158 (@2792)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @575 {TXH1:1295 TXH2:2796 RELATION=child}
+      SET_ATTR @575 {TXH:2796 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @575 {TXH:2796 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @575 {TXH:2796 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @575 {TXH:2796 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @575 {TXH:2796 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @575 {TXH:2796 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @575 {TXH:2796 TIME=575}
+    FREE_RECORDER @575 {TXH:2796}
+    OPEN_RECORDER @585 {TXH:2832 STREAM:1293 NAME:req TIME:585 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @161 (@2828)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @585 {TXH1:1295 TXH2:2832 RELATION=child}
+      SET_ATTR @585 {TXH:2832 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @585 {TXH:2832 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @585 {TXH:2832 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @585 {TXH:2832 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @585 {TXH:2832 NAME:instr_rdata_i VALUE:38863   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @585 {TXH:2832 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @585 {TXH:2832 TIME=585}
+    FREE_RECORDER @585 {TXH:2832}
+    OPEN_RECORDER @595 {TXH:2860 STREAM:1293 NAME:req TIME:595 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @164 (@2856)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @595 {TXH1:1295 TXH2:2860 RELATION=child}
+      SET_ATTR @595 {TXH:2860 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @595 {TXH:2860 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @595 {TXH:2860 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @595 {TXH:2860 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @595 {TXH:2860 NAME:instr_rdata_i VALUE:2750533   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @595 {TXH:2860 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @595 {TXH:2860 TIME=595}
+    FREE_RECORDER @595 {TXH:2860}
+    OPEN_RECORDER @605 {TXH:2888 STREAM:1293 NAME:req TIME:605 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @167 (@2884)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @605 {TXH1:1295 TXH2:2888 RELATION=child}
+      SET_ATTR @605 {TXH:2888 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @605 {TXH:2888 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @605 {TXH:2888 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @605 {TXH:2888 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @605 {TXH:2888 NAME:instr_rdata_i VALUE:fff38393   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @605 {TXH:2888 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @605 {TXH:2888 TIME=605}
+    FREE_RECORDER @605 {TXH:2888}
+    OPEN_RECORDER @615 {TXH:2916 STREAM:1293 NAME:req TIME:615 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @170 (@2912)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @615 {TXH1:1295 TXH2:2916 RELATION=child}
+      SET_ATTR @615 {TXH:2916 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @615 {TXH:2916 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @615 {TXH:2916 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @615 {TXH:2916 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @615 {TXH:2916 NAME:instr_rdata_i VALUE:8067   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @615 {TXH:2916 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @615 {TXH:2916 TIME=615}
+    FREE_RECORDER @615 {TXH:2916}
+    OPEN_RECORDER @625 {TXH:2944 STREAM:1293 NAME:req TIME:625 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @173 (@2940)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @625 {TXH1:1295 TXH2:2944 RELATION=child}
+      SET_ATTR @625 {TXH:2944 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @625 {TXH:2944 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @625 {TXH:2944 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @625 {TXH:2944 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @625 {TXH:2944 NAME:instr_rdata_i VALUE:0   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @625 {TXH:2944 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @625 {TXH:2944 TIME=625}
+    FREE_RECORDER @625 {TXH:2944}
+    OPEN_RECORDER @635 {TXH:2980 STREAM:1293 NAME:req TIME:635 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @176 (@2976)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @635 {TXH1:1295 TXH2:2980 RELATION=child}
+      SET_ATTR @635 {TXH:2980 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @635 {TXH:2980 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @635 {TXH:2980 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @635 {TXH:2980 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @635 {TXH:2980 NAME:instr_rdata_i VALUE:a005b3   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @635 {TXH:2980 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @635 {TXH:2980 TIME=635}
+    FREE_RECORDER @635 {TXH:2980}
+    OPEN_RECORDER @645 {TXH:3008 STREAM:1293 NAME:req TIME:645 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @179 (@3004)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @645 {TXH1:1295 TXH2:3008 RELATION=child}
+      SET_ATTR @645 {TXH:3008 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @645 {TXH:3008 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @645 {TXH:3008 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @645 {TXH:3008 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @645 {TXH:3008 NAME:instr_rdata_i VALUE:a00513   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @645 {TXH:3008 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @645 {TXH:3008 TIME=645}
+    FREE_RECORDER @645 {TXH:3008}
+    OPEN_RECORDER @655 {TXH:3036 STREAM:1293 NAME:req TIME:655 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @182 (@3032)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @655 {TXH1:1295 TXH2:3036 RELATION=child}
+      SET_ATTR @655 {TXH:3036 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @655 {TXH:3036 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @655 {TXH:3036 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @655 {TXH:3036 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @655 {TXH:3036 NAME:instr_rdata_i VALUE:73   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @655 {TXH:3036 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @655 {TXH:3036 TIME=655}
+    FREE_RECORDER @655 {TXH:3036}
+    OPEN_RECORDER @665 {TXH:3066 STREAM:1293 NAME:req TIME:665 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @185 (@3062)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @665 {TXH1:1295 TXH2:3066 RELATION=child}
+      SET_ATTR @665 {TXH:3066 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @665 {TXH:3066 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @665 {TXH:3066 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @665 {TXH:3066 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @665 {TXH:3066 NAME:instr_rdata_i VALUE:503b3   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @665 {TXH:3066 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @665 {TXH:3066 TIME=665}
+    FREE_RECORDER @665 {TXH:3066}
+    OPEN_RECORDER @675 {TXH:3094 STREAM:1293 NAME:req TIME:675 TYPE="Object ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_seq_item @188 (@3090)
+Sequencer ID: \ibex_test_intf_agents_pkg::ibex_test_fetch_sequencer @1 (@623)
+"}
+  LINK @675 {TXH1:1295 TXH2:3094 RELATION=child}
+      SET_ATTR @675 {TXH:3094 NAME:instr_req_o VALUE:X   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @675 {TXH:3094 NAME:instr_gnt_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @675 {TXH:3094 NAME:instr_rvalid_i VALUE:1   RADIX:UVM_HEX BITS=1}
+      SET_ATTR @675 {TXH:3094 NAME:instr_addr_o VALUE:xxxxxxxx   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @675 {TXH:3094 NAME:instr_rdata_i VALUE:100513   RADIX:UVM_HEX BITS=32}
+      SET_ATTR @675 {TXH:3094 NAME:instr_err_i VALUE:0   RADIX:UVM_HEX BITS=1}
+    CLOSE_RECORDER @675 {TXH:3094 TIME=675}
+    FREE_RECORDER @675 {TXH:3094}
