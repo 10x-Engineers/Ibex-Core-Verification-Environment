@@ -11,8 +11,9 @@ Ibex is designed to be 2 Stage pipelined.
 2)	Second is the Decode and Execution stage. 
 
 So, All instructions require two minimum cycles to complete. For any instruction that takes more than one cycle to complete, the core will stall until the instruction is complete. Following picture is the Ibex core detailed view.
+![image](https://user-images.githubusercontent.com/62382286/172102734-62b532e8-77c1-4230-a42c-e6d3bf04d6e9.png)
 
-Reference: LowRISC (Github)
+Reference: [LowRISC](https://ibex-core.readthedocs.io/en/latest/03_reference/pipeline_details.html)
 
 **Instructions and Data Memory**
 
@@ -73,15 +74,18 @@ Specific values are also provided to the interface which are as follows:
 
 A clear picture of the interface signals are shown below.
 
+
+![ibex](https://user-images.githubusercontent.com/62382286/172102035-60536a9d-7bce-4e31-a68b-5895ce1517b4.png)
+
 **UVM Verification Environment**
 
 Our verification environment is designed to create an interface between external memory and the core. The major part of project consists of a UVM Verification Component, also known as UVC which acts as a slave module to the Ibex processor core. The core and memory work as master and slave. The memory slave serves the core with responses against the memory access request generated and shared over a common interface. Following figure is the visual representation of how the UVC is constructed. It is also shown how a UVC is connected to the core. The verification architecture consists of Top Module, Test class, environment class and 2 UVCs.
 
 Top Module (Testbench) instantiates the connections between the DUT and Core. It also initializes the verification process by running the UVM Test class and configures the interfaces to the database to be used by the Driver and Monitor class of both agents. Coming towards the Test class, we store our instructions in the memory model here. We also give the signal to start the core which starts giving requests to our UVC. Furthermore, we also start our sequence classes from here of both fetch and lsu agents. Test class basically controls the whole system. It also instantiates the environment class respectively. 
 Coming towards UVCs, there are 2 agents in our Environment. The agents are connected to the interface which are connected to the core. These interfaces are instruction memory interface, and data memory interface. The instruction memory interface conveys the instructions to be executed. Therefore, only load type requests are generated (Loading the Instruction from memory). On the other hand, the data memory interface lets through both load and store type of requests to be handled by our UVC. Therefore the protocol implementation for both of these are slightly different from each other in order to tailor to their specific needs. However the implemented protocol complies the standard and does not violate it in any case. Following figures show example of the protocols to follow while implementing and serving slave sequences.
+![image](https://ibex-core.readthedocs.io/en/latest/_images/wavedrom-8c7146fa-3ced-4277-b4a7-2d9e5b157ee8.svg)
 
-
-Reference: Basic Memory Transaction (docs)
+Reference: [Basic Memory Transaction](https://ibex-core.readthedocs.io/en/latest/03_reference/load_store_unit.html#timing1)
 
 
 The core raises the request signal high with all the accompanying stimuli (address of concern, data to read/write, read/write operation or other configurations etc.) and keeps waiting for the grant signal from slave module  which in this case, is our UVC to provide a one cycle grant high followed by a one cycle long valid signal along with valid data. If for some reason there is no data on that specific address, we drive the error signal to the core. The same protocol applies to store instructions as well but the only difference is that there is no read data but only valid high when the data is successfully stored. 
